@@ -19,6 +19,12 @@
 		13B9ACCC29A0D5C7008B8B60 /* CircularPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACCA29A0D5C7008B8B60 /* CircularPattern.swift */; };
 		13B9ACD229A0DB66008B8B60 /* cairo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13B9ACD129A0DB66008B8B60 /* cairo.ttf */; };
 		13B9ACD329A0DB66008B8B60 /* cairo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13B9ACD129A0DB66008B8B60 /* cairo.ttf */; };
+		13B9ACD629A0DCC7008B8B60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACD529A0DCC7008B8B60 /* HomeView.swift */; };
+		13B9ACD729A0DCC7008B8B60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACD529A0DCC7008B8B60 /* HomeView.swift */; };
+		13B9ACD929A0DCD8008B8B60 /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACD829A0DCD8008B8B60 /* OpeningView.swift */; };
+		13B9ACDA29A0DCD8008B8B60 /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACD829A0DCD8008B8B60 /* OpeningView.swift */; };
+		13B9ACDC29A0DCE0008B8B60 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACDB29A0DCE0008B8B60 /* DetailView.swift */; };
+		13B9ACDD29A0DCE0008B8B60 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACDB29A0DCE0008B8B60 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,9 @@
 		13B9ACC629A0CCE8008B8B60 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		13B9ACCA29A0D5C7008B8B60 /* CircularPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularPattern.swift; sourceTree = "<group>"; };
 		13B9ACD129A0DB66008B8B60 /* cairo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cairo.ttf; sourceTree = "<group>"; };
+		13B9ACD529A0DCC7008B8B60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../../HomeView.swift; sourceTree = "<group>"; };
+		13B9ACD829A0DCD8008B8B60 /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
+		13B9ACDB29A0DCE0008B8B60 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 		13B9ACA629A0CCB9008B8B60 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				13B9ACD429A0DCA4008B8B60 /* Views */,
 				13B9ACCD29A0DB25008B8B60 /* Fonts */,
 				13B9ACC929A0D5BC008B8B60 /* Components */,
 				13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */,
@@ -104,6 +114,16 @@
 				13B9ACD129A0DB66008B8B60 /* cairo.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		13B9ACD429A0DCA4008B8B60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13B9ACD529A0DCC7008B8B60 /* HomeView.swift */,
+				13B9ACD829A0DCD8008B8B60 /* OpeningView.swift */,
+				13B9ACDB29A0DCE0008B8B60 /* DetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +229,10 @@
 				13B9ACB929A0CCBA008B8B60 /* ContentView.swift in Sources */,
 				13B9ACC729A0CCE8008B8B60 /* CustomColors.swift in Sources */,
 				13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
+				13B9ACDC29A0DCE0008B8B60 /* DetailView.swift in Sources */,
+				13B9ACD629A0DCC7008B8B60 /* HomeView.swift in Sources */,
 				13B9ACCB29A0D5C7008B8B60 /* CircularPattern.swift in Sources */,
+				13B9ACD929A0DCD8008B8B60 /* OpeningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +243,10 @@
 				13B9ACBA29A0CCBA008B8B60 /* ContentView.swift in Sources */,
 				13B9ACC829A0CCE8008B8B60 /* CustomColors.swift in Sources */,
 				13B9ACB829A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
+				13B9ACDD29A0DCE0008B8B60 /* DetailView.swift in Sources */,
+				13B9ACD729A0DCC7008B8B60 /* HomeView.swift in Sources */,
 				13B9ACCC29A0D5C7008B8B60 /* CircularPattern.swift in Sources */,
+				13B9ACDA29A0DCD8008B8B60 /* OpeningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
