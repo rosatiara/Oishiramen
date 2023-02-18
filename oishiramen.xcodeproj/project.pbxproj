@@ -13,6 +13,8 @@
 		13B9ACBA29A0CCBA008B8B60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACA829A0CCB9008B8B60 /* ContentView.swift */; };
 		13B9ACBB29A0CCBA008B8B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B9ACA929A0CCBA008B8B60 /* Assets.xcassets */; };
 		13B9ACBC29A0CCBA008B8B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B9ACA929A0CCBA008B8B60 /* Assets.xcassets */; };
+		13B9ACC729A0CCE8008B8B60 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACC629A0CCE8008B8B60 /* CustomColors.swift */; };
+		13B9ACC829A0CCE8008B8B60 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACC629A0CCE8008B8B60 /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		13B9ACAE29A0CCBA008B8B60 /* oishiramen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oishiramen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B9ACB429A0CCBA008B8B60 /* oishiramen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oishiramen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B9ACB629A0CCBA008B8B60 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		13B9ACC629A0CCE8008B8B60 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 				13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */,
 				13B9ACA829A0CCB9008B8B60 /* ContentView.swift */,
 				13B9ACA929A0CCBA008B8B60 /* Assets.xcassets */,
+				13B9ACC629A0CCE8008B8B60 /* CustomColors.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -177,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B9ACB929A0CCBA008B8B60 /* ContentView.swift in Sources */,
+				13B9ACC729A0CCE8008B8B60 /* CustomColors.swift in Sources */,
 				13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B9ACBA29A0CCBA008B8B60 /* ContentView.swift in Sources */,
+				13B9ACC829A0CCE8008B8B60 /* CustomColors.swift in Sources */,
 				13B9ACB829A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
