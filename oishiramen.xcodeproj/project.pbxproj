@@ -17,6 +17,8 @@
 		13B9ACC829A0CCE8008B8B60 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACC629A0CCE8008B8B60 /* CustomColors.swift */; };
 		13B9ACCB29A0D5C7008B8B60 /* CircularPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACCA29A0D5C7008B8B60 /* CircularPattern.swift */; };
 		13B9ACCC29A0D5C7008B8B60 /* CircularPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACCA29A0D5C7008B8B60 /* CircularPattern.swift */; };
+		13B9ACD229A0DB66008B8B60 /* cairo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13B9ACD129A0DB66008B8B60 /* cairo.ttf */; };
+		13B9ACD329A0DB66008B8B60 /* cairo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13B9ACD129A0DB66008B8B60 /* cairo.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		13B9ACB629A0CCBA008B8B60 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		13B9ACC629A0CCE8008B8B60 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		13B9ACCA29A0D5C7008B8B60 /* CircularPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularPattern.swift; sourceTree = "<group>"; };
+		13B9ACD129A0DB66008B8B60 /* cairo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cairo.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		13B9ACA629A0CCB9008B8B60 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				13B9ACCD29A0DB25008B8B60 /* Fonts */,
 				13B9ACC929A0D5BC008B8B60 /* Components */,
 				13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */,
 				13B9ACA829A0CCB9008B8B60 /* ContentView.swift */,
@@ -92,6 +96,14 @@
 				13B9ACCA29A0D5C7008B8B60 /* CircularPattern.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		13B9ACCD29A0DB25008B8B60 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				13B9ACD129A0DB66008B8B60 /* cairo.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B9ACD229A0DB66008B8B60 /* cairo.ttf in Resources */,
 				13B9ACBB29A0CCBA008B8B60 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B9ACD329A0DB66008B8B60 /* cairo.ttf in Resources */,
 				13B9ACBC29A0CCBA008B8B60 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
