@@ -31,9 +31,18 @@ struct CircularPattern: View {
             Circle()
                 .fill(Color.white)
                 .padding(40)
+            Circle()
+                .fill(Color.myOrange)
+                .padding(45)
+            Circle()
+                .fill(Color.black)
+                .padding(50)
+            Circle()
+                .opacity(100.0)
+                .padding(55)
             
         }
-        .frame(width: 200, height: 200)
+        .frame(width: 250, height: 250)
         .padding()
     }
 }
