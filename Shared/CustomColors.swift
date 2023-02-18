@@ -9,13 +9,10 @@ import Foundation
 import SwiftUI
 
 extension Color {
-    public static var black: Color {
-        return Color("black")
-    }
-    public static var orange: Color {
+    public static var myOrange: Color {
        return Color(red: 235/255, green: 134/255, blue: 72/255)
     }
-    public static var gray: Color {
+    public static var myGray: Color {
         return Color(red: 32/255, green: 32/255, blue: 32/255)
     }
 }
