@@ -7,22 +7,25 @@
 
 import SwiftUI
 
-let ramens = ["arigatou", "chikinkare", "konnichiwa", "midoriro", "niko"]
+//let cardData = [
+//    "img": "Alice",
+//    "age": "30",
+//    "address": "Imaginary Road 22"
+//]
+//
+//cardData.forEach { key, value in
+//    print("\(key): \(value)")
+//    VStack {
+//        \(value)
+//    }
+//}
+//
+//let ramens = ["arigatou", "chikinkare", "konnichiwa", "midoriro", "niko"]
 
 
 struct Card: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        // VStack
-            // Menu
-                // Ramen image
-                // ramen name
-                // stars
-            // Descriptions
-                // HStack
-                    // heart
-                    // price
-                    // add button
+
         
         
     }
