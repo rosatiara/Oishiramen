@@ -29,41 +29,38 @@ struct CardView: View {
     var body: some View {
         ZStack {
             Color.black
-            VStack {
+            VStack(spacing: 10){
                 // location - menu (foreach) - action bar
                 HStack {
-                    
+                    Image("chevron")
                 }
                 // card forEach goes here
                 ForEach(cards, id: \.id) { card in
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(.white)
-                            .frame(width: 180, height: 225, alignment: .center)
-                            .padding()
-                            .border(.red)
+                            .frame(width: 180, height: 200, alignment: .center)
+                            //.padding(.bottom, 50)
                         VStack {
                             // location menu bar
                             card.image
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 220, height: 220)
+                                .frame(width: 150, height: 150)
                                 .aspectRatio(contentMode: .fit)
-                                .offset(y: -60)
+                                .offset(y: -30)
                             Text(card.menu)
-                                .foregroundColor(.black)
+                                .foregroundColor(.red)
                             HStack {
                                 // heart, price, plus
                             }
                         }
-                    }
+                    }.navigationBarTitle(Text("WWDC"), displayMode:.automatic)
 
                 }
                 // action bar goes here
             }
         }
-
-        
     }
 }
 
