@@ -27,7 +27,8 @@ struct CardView: View {
     ]
     
     var body: some View {
-        HStack {
+        ZStack {
+            Color.black
             VStack {
                 // location - menu (foreach) - action bar
                 HStack {
@@ -37,9 +38,10 @@ struct CardView: View {
                 ForEach(cards, id: \.id) { card in
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
-                            .fill(.black)
+                            .fill(.white)
                             .frame(width: 180, height: 225, alignment: .center)
                             .padding()
+                            .border(.red)
                         VStack {
                             // location menu bar
                             card.image
@@ -49,12 +51,12 @@ struct CardView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .offset(y: -60)
                             Text(card.menu)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                             HStack {
                                 // heart, price, plus
                             }
                         }
-                    }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    }
 
                 }
                 // action bar goes here
