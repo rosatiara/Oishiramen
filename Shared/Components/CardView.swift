@@ -17,6 +17,8 @@ struct Card {
 }
 
 struct CardView: View {
+  
+    
     let cards = [
         Card(id: 1, image: Image("chikinkare"), menu: "Chikinkare", rate: "⭐️⭐️⭐️⭐️", price: "$5.4"),
         Card(id: 2, image: Image("arigatou"), menu: "Arigatou Ramen", rate: "⭐️⭐️⭐️⭐️⭐️", price: "$8.9"),
@@ -25,28 +27,40 @@ struct CardView: View {
     ]
     
     var body: some View {
-        VStack {
-            // location - menu (foreach) - action bar
-            HStack {
-                
-            }
-            // card forEach goes here
-            ForEach(cards, id: \.id) { card in
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(.black)
-                        .frame(width: 200, height: 300, alignment: .center)
-                        .padding()
-                    VStack {
-                        // location menu bar
-                        Text(card.menu)
-                            .foregroundColor(.white)
-                    }
+        HStack {
+            VStack {
+                // location - menu (foreach) - action bar
+                HStack {
+                    
                 }
+                // card forEach goes here
+                ForEach(cards, id: \.id) { card in
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(.black)
+                            .frame(width: 180, height: 225, alignment: .center)
+                            .padding()
+                        VStack {
+                            // location menu bar
+                            card.image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 220, height: 220)
+                                .aspectRatio(contentMode: .fit)
+                                .offset(y: -60)
+                            Text(card.menu)
+                                .foregroundColor(.white)
+                            HStack {
+                                // heart, price, plus
+                            }
+                        }
+                    }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
 
+                }
+                // action bar goes here
             }
-            // action bar goes here
         }
+
         
     }
 }
