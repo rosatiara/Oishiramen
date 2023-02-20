@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		133AFF5D29A2701600151303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5C29A2701600151303 /* CardView.swift */; };
 		133AFF5E29A2701600151303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5C29A2701600151303 /* CardView.swift */; };
-		133AFF6029A2703400151303 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5F29A2703400151303 /* Card.swift */; };
-		133AFF6129A2703400151303 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5F29A2703400151303 /* Card.swift */; };
 		13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */; };
 		13B9ACB829A0CCBA008B8B60 /* oishiramenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */; };
 		13B9ACB929A0CCBA008B8B60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACA829A0CCB9008B8B60 /* ContentView.swift */; };
@@ -33,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		133AFF5C29A2701600151303 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		133AFF5F29A2703400151303 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oishiramenApp.swift; sourceTree = "<group>"; };
 		13B9ACA829A0CCB9008B8B60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13B9ACA929A0CCBA008B8B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,14 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		133AFF5829A26F4E00151303 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				133AFF5F29A2703400151303 /* Card.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		13B9ACA129A0CCB9008B8B60 = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +75,6 @@
 		13B9ACA629A0CCB9008B8B60 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				133AFF5829A26F4E00151303 /* Data */,
 				13B9ACD429A0DCA4008B8B60 /* Views */,
 				13B9ACCD29A0DB25008B8B60 /* Fonts */,
 				13B9ACC929A0D5BC008B8B60 /* Components */,
@@ -243,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B9ACB929A0CCBA008B8B60 /* ContentView.swift in Sources */,
-				133AFF6029A2703400151303 /* Card.swift in Sources */,
 				133AFF5D29A2701600151303 /* CardView.swift in Sources */,
 				13B9ACC729A0CCE8008B8B60 /* CustomColors.swift in Sources */,
 				13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
@@ -259,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B9ACBA29A0CCBA008B8B60 /* ContentView.swift in Sources */,
-				133AFF6129A2703400151303 /* Card.swift in Sources */,
 				133AFF5E29A2701600151303 /* CardView.swift in Sources */,
 				13B9ACC829A0CCE8008B8B60 /* CustomColors.swift in Sources */,
 				13B9ACB829A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
