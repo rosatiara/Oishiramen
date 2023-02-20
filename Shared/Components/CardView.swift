@@ -29,7 +29,7 @@ struct CardView: View {
     var body: some View {
         ZStack {
             Color.black
-            VStack(spacing: 10){
+            VStack(spacing: 15){
                 // location - menu (foreach) - action bar
                 HStack {
                     Image("chevron")
@@ -39,16 +39,16 @@ struct CardView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(.white)
-                            .frame(width: 180, height: 200, alignment: .center)
+                            .frame(width: 200, height: 200, alignment: .center)
                             //.padding(.bottom, 50)
                         VStack {
                             // location menu bar
                             card.image
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 150, height: 150)
+                                .frame(width: 200, height: 150)
                                 .aspectRatio(contentMode: .fit)
-                                .offset(y: -30)
+                                .offset(y: -70)
                             Text(card.menu)
                                 .foregroundColor(.red)
                             HStack {
