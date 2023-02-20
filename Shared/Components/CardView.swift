@@ -29,11 +29,17 @@ struct CardView: View {
     var body: some View {
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all)
-                VStack(spacing: 30){
+                VStack(spacing: 50){
                     // location - menu (foreach) - action bar
                     HStack {
                         Image("chevron")
-                    }
+                        Text("Colorado, US")
+                        Image("menu")
+                    }.foregroundColor(Color.myOrange)
+                    Text("Find the best ramen for you")
+                        .foregroundColor(Color.myOrange)
+                        .font(.largeTitle)
+                        .bold()
                     // card forEach goes here
                     ScrollView {
                         ForEach(cards, id: \.id) { card in
@@ -47,12 +53,14 @@ struct CardView: View {
                                     card.image
                                         .resizable()
                                         .scaledToFill()
-                                        .frame(width: 150, height: 150)
+                                        .frame(width: 140, height: 140)
                                         .aspectRatio(contentMode: .fit)
                                         .offset(y: -70)
                                     Text(card.menu)
                                         .foregroundColor(.red)
+                                    Text(card.rate)
                                     HStack {
+                                        Image("favorite")
                                         // heart, price, plus
                                     }
                                 }
