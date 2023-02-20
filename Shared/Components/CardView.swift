@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Card {
+    let id: Int
     let image: Image
     let menu: String
     let rate: String
@@ -16,17 +17,37 @@ struct Card {
 }
 
 struct CardView: View {
-    
     let cards = [
-        Card(image: Image("chikinkare"), menu: "Chikinkare", rate: "⭐️⭐️⭐️⭐️", price: "$5.4"),
-        Card(image: Image("arigatou"), menu: "Arigatou Ramen", rate: "⭐️⭐️⭐️⭐️⭐️", price: "$8.9"),
-        Card(image: Image("midoriro"), menu: "Midoriro Yasai", rate: "⭐️⭐️⭐️⭐️⭐️", price: "$6.3"),
-        Card(image: Image("niko"), menu: "Niko To Kinoko", rate: "⭐️⭐️⭐️⭐️⭐️", price: "$8.9")
+        Card(id: 1, image: Image("chikinkare"), menu: "Chikinkare", rate: "⭐️⭐️⭐️⭐️", price: "$5.4"),
+        Card(id: 2, image: Image("arigatou"), menu: "Arigatou Ramen", rate: "⭐️⭐️⭐️⭐️⭐️", price: "$8.9"),
+        Card(id: 3, image: Image("midoriro"), menu: "Midoriro Yasai", rate: "⭐️⭐️⭐️⭐️⭐️", price: "$6.3"),
+        Card(id: 4, image: Image("niko"), menu: "Niko To Kinoko", rate: "⭐️⭐️⭐️⭐️⭐️", price: "$8.9")
     ]
     
-    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            // location - menu (foreach) - action bar
+            HStack {
+                
+            }
+            // card forEach goes here
+            ForEach(cards, id: \.id) { card in
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.black)
+                        .frame(width: 200, height: 300, alignment: .center)
+                        .padding()
+                    VStack {
+                        // location menu bar
+                        Text(card.menu)
+                            .foregroundColor(.white)
+                    }
+                }
+
+            }
+            // action bar goes here
+        }
+        
     }
 }
 
