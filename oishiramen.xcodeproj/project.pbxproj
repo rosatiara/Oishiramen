@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1306ADD529A5037900AE99AC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADD429A5037900AE99AC /* BaseView.swift */; };
+		1306ADD629A5037900AE99AC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADD429A5037900AE99AC /* BaseView.swift */; };
+		1306ADD829A503AE00AE99AC /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADD729A503AE00AE99AC /* BaseViewModel.swift */; };
+		1306ADD929A503AE00AE99AC /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADD729A503AE00AE99AC /* BaseViewModel.swift */; };
 		133AFF5D29A2701600151303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5C29A2701600151303 /* CardView.swift */; };
 		133AFF5E29A2701600151303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5C29A2701600151303 /* CardView.swift */; };
 		13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */; };
@@ -30,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1306ADD429A5037900AE99AC /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		1306ADD729A503AE00AE99AC /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		133AFF5C29A2701600151303 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oishiramenApp.swift; sourceTree = "<group>"; };
 		13B9ACA829A0CCB9008B8B60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +69,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1306ADD229A5035500AE99AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1306ADD329A5036500AE99AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1306ADD729A503AE00AE99AC /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		13B9ACA129A0CCB9008B8B60 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +96,8 @@
 		13B9ACA629A0CCB9008B8B60 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1306ADD329A5036500AE99AC /* ViewModel */,
+				1306ADD229A5035500AE99AC /* Model */,
 				13B9ACD429A0DCA4008B8B60 /* Views */,
 				13B9ACCD29A0DB25008B8B60 /* Fonts */,
 				13B9ACC929A0D5BC008B8B60 /* Components */,
@@ -126,6 +149,7 @@
 				13B9ACD529A0DCC7008B8B60 /* HomeView.swift */,
 				13B9ACD829A0DCD8008B8B60 /* OpeningView.swift */,
 				13B9ACDB29A0DCE0008B8B60 /* DetailView.swift */,
+				1306ADD429A5037900AE99AC /* BaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,11 +255,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B9ACB929A0CCBA008B8B60 /* ContentView.swift in Sources */,
+				1306ADD829A503AE00AE99AC /* BaseViewModel.swift in Sources */,
 				133AFF5D29A2701600151303 /* CardView.swift in Sources */,
 				13B9ACC729A0CCE8008B8B60 /* CustomColors.swift in Sources */,
 				13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
 				13B9ACDC29A0DCE0008B8B60 /* DetailView.swift in Sources */,
 				13B9ACD629A0DCC7008B8B60 /* HomeView.swift in Sources */,
+				1306ADD529A5037900AE99AC /* BaseView.swift in Sources */,
 				13B9ACCB29A0D5C7008B8B60 /* CircularPattern.swift in Sources */,
 				13B9ACD929A0DCD8008B8B60 /* OpeningView.swift in Sources */,
 			);
@@ -246,11 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B9ACBA29A0CCBA008B8B60 /* ContentView.swift in Sources */,
+				1306ADD929A503AE00AE99AC /* BaseViewModel.swift in Sources */,
 				133AFF5E29A2701600151303 /* CardView.swift in Sources */,
 				13B9ACC829A0CCE8008B8B60 /* CustomColors.swift in Sources */,
 				13B9ACB829A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
 				13B9ACDD29A0DCE0008B8B60 /* DetailView.swift in Sources */,
 				13B9ACD729A0DCC7008B8B60 /* HomeView.swift in Sources */,
+				1306ADD629A5037900AE99AC /* BaseView.swift in Sources */,
 				13B9ACCC29A0D5C7008B8B60 /* CircularPattern.swift in Sources */,
 				13B9ACDA29A0DCD8008B8B60 /* OpeningView.swift in Sources */,
 			);
