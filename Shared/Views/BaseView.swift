@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct BaseView: View {
+    
     @StateObject var baseData = BaseViewModel()
     
     init() {
-        UITabBar.appearance().isHidden = true
+        UITabBar.appearance().isHidden = false
     }
     
     var body: some View {
+        Color.black.edgesIgnoringSafeArea(.all)
         TabView(selection: $baseData.currentTab) {
             Text("Home")
                 .tag(Tab.Home)
+                .foregroundColor(.myOrange)
             Text("Favorite")
                 .tag(Tab.Favorite)
             Text("Notification")
@@ -30,10 +33,10 @@ struct BaseView: View {
             HStack(spacing: 0) {
                 TabButton(Tab: .Home)
                 TabButton(Tab: .Favorite)
-                TabButton(Tab: .Home)
-                TabButton(Tab: .Home)
+                TabButton(Tab: .Notification)
+                TabButton(Tab: .Person)
 
-            }
+            },alignment: .bottom
             
         )
     }
@@ -50,7 +53,7 @@ struct BaseView: View {
                 .resizable()
                 .renderingMode(.template)
                 .aspectRatio(contentMode: .fit)
-                .foregroundColor(baseData.currentTab == Tab ? Color("orange") : Color.gray.opacity(0.5))
+                .foregroundColor(Color("orange"))
                 .frame(width: 25, height: 25)
                 .frame(maxWidth: .infinity)
             
