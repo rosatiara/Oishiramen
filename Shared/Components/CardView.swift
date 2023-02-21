@@ -29,7 +29,7 @@ struct CardView: View {
     var body: some View {
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all)
-                VStack(spacing: 50){
+                VStack(spacing: 20){
                     // location - menu (foreach) - action bar
                     HStack {
                         Image("chevron")
@@ -40,13 +40,14 @@ struct CardView: View {
                         .foregroundColor(Color.myOrange)
                         .font(.largeTitle)
                         .bold()
+                        .padding(.bottom, -20)
                     // card forEach goes here
                     ScrollView {
                         ForEach(cards, id: \.id) { card in
-                            ZStack {
+                            ZStack(alignment: .center) {
                                 RoundedRectangle(cornerRadius: 20)
                                     .fill(.white)
-                                    .frame(width: 200, height: 200, alignment: .center)
+                                    .frame(width: 180, height: 200, alignment: .center)
                                     //.padding(.bottom, 50)
                                 VStack {
                                     // location menu bar
@@ -59,15 +60,25 @@ struct CardView: View {
                                     Text(card.menu)
                                         .foregroundColor(.red)
                                     Text(card.rate)
-                                    HStack {
-                                        Image("favorite")
-                                        // heart, price, plus
-                                    }
                                 }
                             }
                         }
-                    }
+                    }.border(.red)
+                        .frame(
+                              minWidth: 0,
+                              maxWidth: .infinity,
+                              minHeight: 0,
+                              maxHeight: .infinity,
+                              alignment: .topLeading
+                            )
                     // action bar goes here
+                    HStack {
+                        Text("A")
+                        Text("A")
+                        Text("A")
+                        
+                        // heart, price, plus
+                    }.foregroundColor(Color.myOrange)
                 }
             }
         
