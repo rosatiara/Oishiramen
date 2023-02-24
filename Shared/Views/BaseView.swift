@@ -16,6 +16,7 @@ struct BaseView: View {
     }
     
     var body: some View {
+        
             TabView(selection: $baseData.currentTab) {
                 HomeView()
                     .environmentObject(baseData)
