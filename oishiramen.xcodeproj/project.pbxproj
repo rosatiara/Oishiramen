@@ -16,6 +16,7 @@
 		1306ADE129A8B36200AE99AC /* CustomCurveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADE029A8B36100AE99AC /* CustomCurveButton.swift */; };
 		1306ADE229A8B36200AE99AC /* CustomCurveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADE029A8B36100AE99AC /* CustomCurveButton.swift */; };
 		1306ADE429A8FD9A00AE99AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1306ADE329A8FD9A00AE99AC /* README.md */; };
+		1306ADE629A9270600AE99AC /* Ramen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADE529A9270600AE99AC /* Ramen.swift */; };
 		133AFF5D29A2701600151303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5C29A2701600151303 /* CardView.swift */; };
 		133AFF5E29A2701600151303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5C29A2701600151303 /* CardView.swift */; };
 		13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */; };
@@ -42,6 +43,7 @@
 		1306ADDA29A8AED300AE99AC /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		1306ADE029A8B36100AE99AC /* CustomCurveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveButton.swift; sourceTree = "<group>"; };
 		1306ADE329A8FD9A00AE99AC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1306ADE529A9270600AE99AC /* Ramen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ramen.swift; sourceTree = "<group>"; };
 		133AFF5C29A2701600151303 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oishiramenApp.swift; sourceTree = "<group>"; };
 		13B9ACA829A0CCB9008B8B60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		1306ADD229A5035500AE99AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1306ADE529A9270600AE99AC /* Ramen.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				133AFF5D29A2701600151303 /* CardView.swift in Sources */,
 				13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */,
 				13B9ACDC29A0DCE0008B8B60 /* DetailView.swift in Sources */,
+				1306ADE629A9270600AE99AC /* Ramen.swift in Sources */,
 				1306ADE129A8B36200AE99AC /* CustomCurveButton.swift in Sources */,
 				13B9ACD629A0DCC7008B8B60 /* HomeView.swift in Sources */,
 				1306ADDB29A8AED300AE99AC /* CustomColors.swift in Sources */,
