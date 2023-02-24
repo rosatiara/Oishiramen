@@ -44,6 +44,7 @@ struct BaseView: View {
                 HStack(spacing: 0) {
                     TabButton(Tab: .Home)
                     TabButton(Tab: .Favorite)
+                        .offset(x: -20)
                     // search button
                     Button {
                         
@@ -64,6 +65,7 @@ struct BaseView: View {
                     }.offset(y: -30)
                     
                     TabButton(Tab: .Notification)
+                        .offset(x: 20)
                     TabButton(Tab: .Person)
 
                 }.background(Color("gray")
