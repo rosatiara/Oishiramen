@@ -17,7 +17,8 @@ struct BaseView: View {
     
     var body: some View {
             TabView(selection: $baseData.currentTab) {
-                Text("Home")
+                HomeView()
+                    .environmentObject(baseData)
                     .tag(Tab.Home)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .foregroundColor(Color("orange"))
@@ -53,24 +54,24 @@ struct BaseView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 26, height: 26)
                             .foregroundColor(Color("orange"))
-                            .padding(20)
+                            .padding(17)
                             .background(Color("gray"))
                             .clipShape(Circle())
+                        
+                            .shadow(color: Color.orange.opacity(0.04), radius: 5, x: 0, y: 3)
                             
                         
-                    }.offset(y: -28)
+                    }.offset(y: -30)
                     
                     TabButton(Tab: .Notification)
                     TabButton(Tab: .Person)
 
-                }.background(Color.black
+                }.background(Color("gray")
                                 .clipShape(CustomCurveButton())
-                                
                             )
-                // .shadow(color: Color.orange.opacity(0.2), radius: 2, x: -1, y: -1)
                 ,alignment: .bottom
-    
-            ) // Add this line to ensure the TabView is displayed above the black background
+            )
+
     }
     
     @ViewBuilder
@@ -86,6 +87,7 @@ struct BaseView: View {
                 .renderingMode(.template)
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(Color("orange"))
+                .background(Color("gray"))
                 .frame(width: 25, height: 25)
                 .frame(maxWidth: .infinity)
                 
