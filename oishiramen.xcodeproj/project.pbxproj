@@ -15,6 +15,7 @@
 		1306ADDC29A8AED300AE99AC /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADDA29A8AED300AE99AC /* CustomColors.swift */; };
 		1306ADE129A8B36200AE99AC /* CustomCurveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADE029A8B36100AE99AC /* CustomCurveButton.swift */; };
 		1306ADE229A8B36200AE99AC /* CustomCurveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADE029A8B36100AE99AC /* CustomCurveButton.swift */; };
+		1306ADE429A8FD9A00AE99AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1306ADE329A8FD9A00AE99AC /* README.md */; };
 		133AFF5D29A2701600151303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5C29A2701600151303 /* CardView.swift */; };
 		133AFF5E29A2701600151303 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AFF5C29A2701600151303 /* CardView.swift */; };
 		13B9ACB729A0CCBA008B8B60 /* oishiramenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */; };
@@ -40,6 +41,7 @@
 		1306ADD729A503AE00AE99AC /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1306ADDA29A8AED300AE99AC /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		1306ADE029A8B36100AE99AC /* CustomCurveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveButton.swift; sourceTree = "<group>"; };
+		1306ADE329A8FD9A00AE99AC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		133AFF5C29A2701600151303 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		13B9ACA729A0CCB9008B8B60 /* oishiramenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oishiramenApp.swift; sourceTree = "<group>"; };
 		13B9ACA829A0CCB9008B8B60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		13B9ACA129A0CCB9008B8B60 = {
 			isa = PBXGroup;
 			children = (
+				1306ADE329A8FD9A00AE99AC /* README.md */,
 				13B9ACA629A0CCB9008B8B60 /* Shared */,
 				13B9ACB529A0CCBA008B8B60 /* macOS */,
 				13B9ACAF29A0CCBA008B8B60 /* Products */,
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1306ADE429A8FD9A00AE99AC /* README.md in Resources */,
 				13B9ACD229A0DB66008B8B60 /* cairo.ttf in Resources */,
 				13B9ACBB29A0CCBA008B8B60 /* Assets.xcassets in Resources */,
 			);

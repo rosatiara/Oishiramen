@@ -56,7 +56,7 @@ struct BaseView: View {
                             .frame(width: 26, height: 26)
                             .foregroundColor(Color("orange"))
                             .padding(17)
-                            .background(Color("gray-tab"))
+                            .background(Color("gray").opacity(0.45))
                             .clipShape(Circle())
                         
                             .shadow(color: Color.orange.opacity(0.04), radius: 5, x: 0, y: 3)
@@ -68,7 +68,7 @@ struct BaseView: View {
                         .offset(x: 20)
                     TabButton(Tab: .Person)
 
-                }.background(Color("gray-tab")
+                }.background(Color("gray").opacity(0.45)
                                 .clipShape(CustomCurveButton())
                             )
                 ,alignment: .bottom
@@ -89,7 +89,7 @@ struct BaseView: View {
                 .renderingMode(.template)
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(Color("orange"))
-                .background(Color("gray-tab"))
+                .background(Color("gray").opacity(0.45))
                 .frame(width: 25, height: 25)
                 .frame(maxWidth: .infinity)
                 
