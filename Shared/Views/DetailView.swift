@@ -48,12 +48,43 @@ struct DetailView: View {
                     // option
                 }.padding(.horizontal)
                 ZStack { // Menu Detail
+                    Rectangle()
+                        .cornerRadius(70)
+                        .offset(y: 180)
+                        .foregroundColor(Color("gray").opacity(0.45))
                     VStack {
+                        Image(ramen.ramenImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 320, height: 320)
                         // ramen image
                         // plus button
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 120, height: 50)
+                                .cornerRadius(20)
+                            HStack {
+                                Text("-")
+                                Text("1")
+                                Text("+")
+                            }.foregroundColor(Color.black)
+                                .font(.system(size: 20, weight: .bold))
+                                .frame(maxWidth: .infinity)
+                        }
                         // ramen title
+                        Text(ramen.ramenName)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 40, weight: .heavy))
+                            .frame(alignment: .trailing)
                         HStack {
-                            // rating
+                            Text("⭐")
+                            Text(ramen.ramenRatingNum)
+                            
+                            Text("⭐")
+                            Text("pork, lard")
+                            
+                            Text("⭐")
+                            Text("free ocha")
                             // pork, lard
                             // free ocha
                         }
@@ -75,6 +106,6 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        //DetailView()
+        // DetailView()
     }
 }
