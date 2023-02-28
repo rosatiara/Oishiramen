@@ -10,6 +10,11 @@ import SwiftUI
 class BaseViewModel: ObservableObject {
     // tab bar
     @Published var currentTab: Tab = .Home
+    @Published var homeTab = "Ramens"
+    
+    @Published var currentRamen: Ramen?
+    @Published var showDetail = false
+    
 }
 
 enum Tab: String {
