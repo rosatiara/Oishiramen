@@ -17,9 +17,9 @@ struct Ramen: Identifiable {
 }
 
 let ramens = [
-    Ramen(ramenImage: "chikinkare", ramenName: "Chikinkare", ramenRating: "⭐⭐⭐⭐", price: "$5.4"),
-    Ramen(ramenImage: "arigatou", ramenName: "Arigatou Ramen", ramenRating: "⭐⭐⭐⭐⭐", price: "$8.9"),
-    Ramen(ramenImage: "midoriro", ramenName: "Midoriro Yasai", ramenRating: "⭐⭐⭐⭐⭐", price: "$6.3"),
-    Ramen(ramenImage: "niko", ramenName: "Niko To Kinoko", ramenRating: "⭐⭐⭐⭐⭐", price: "$8.9"),
+    Ramen(ramenImage: "chikinkare", ramenName: "Kyoto Assari", ramenRating: "⭐⭐⭐⭐", price: "$5.4"),
+    Ramen(ramenImage: "arigatou", ramenName: "Kumamoto", ramenRating: "⭐⭐⭐⭐⭐", price: "$8.9"),
+    Ramen(ramenImage: "midoriro", ramenName: "Miroran Curry", ramenRating: "⭐⭐⭐⭐⭐", price: "$6.3"),
+    Ramen(ramenImage: "niko", ramenName: "Tori-Paitan", ramenRating: "⭐⭐⭐⭐⭐", price: "$8.9"),
 
 ]
