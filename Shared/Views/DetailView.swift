@@ -12,11 +12,41 @@ struct DetailView: View {
     var animation: Namespace.ID
     var body: some View {
         if let ramen = baseData.currentRamen, baseData.showDetail {
-            VStack (spacing: 0) {
+            VStack (spacing: 15) {
                 HStack {
                     // chevron left
+                    Button {
+                        withAnimation {
+                            baseData.showDetail = false
+                        }
+                    } label: {
+                        Image("chevron")
+                            .renderingMode(.template)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 25, height: 25)
+                            .padding(15)
+                            .background(Color("gray").opacity(0.45))
+                            .cornerRadius(20)
+                        
+                    }
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Image("option")
+                            .renderingMode(.template)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 25, height: 25)
+                            .padding(15)
+                            .background(Color("gray").opacity(0.45))
+                            .cornerRadius(20)
+                        
+                    }
+                    
                     // option
-                }
+                }.padding(.horizontal)
                 ZStack { // Menu Detail
                     VStack {
                         // ramen image
@@ -34,7 +64,10 @@ struct DetailView: View {
                         }
                     }
                 }
-            }
+            }.padding(.vertical)
+                .frame(maxWidth: .infinity , maxHeight: .infinity, alignment: .top)
+                .background(Color.black)
+                .transition(.opacity)
         }
     }
 }
