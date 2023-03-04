@@ -26,7 +26,7 @@ struct DetailView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 25, height: 25)
                             .padding(15)
-                            .background(Color("gray").opacity(0.45))
+                            .background(Color("gray-detail"))
                             .cornerRadius(20)
                         
                     }
@@ -40,7 +40,7 @@ struct DetailView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 25, height: 25)
                             .padding(15)
-                            .background(Color("gray").opacity(0.45))
+                            .background(Color("gray-detail"))
                             .cornerRadius(20)
                         
                     }
@@ -52,7 +52,7 @@ struct DetailView: View {
                         .cornerRadius(70)
                         .frame(height:700)
                         .offset(y:100)
-                        .foregroundColor(Color("gray").opacity(0.45))
+                        .foregroundColor(Color("gray-detail").opacity(0.45))
                     VStack {
                         Image(ramen.ramenImage)
                             .resizable()
@@ -65,13 +65,22 @@ struct DetailView: View {
                                 .frame(width: 120, height: 50)
                                 .cornerRadius(20)
                             HStack {
-                                Text("-")
-                                Text("1")
-                                Text("+")
+                                Button {
+                                    
+                                } label : {
+                                    
+                                }
+                                
+                                Button {
+                                    
+                                } label : {
+                                    
+                                }
+                                
                             }.foregroundColor(Color.black)
                                 .font(.system(size: 20, weight: .bold))
                                 .frame(maxWidth: .infinity)
-                        }
+                        }.padding(.vertical)
                         // ramen title
                         Text(ramen.ramenName)
                             .foregroundColor(Color.white)
@@ -86,16 +95,15 @@ struct DetailView: View {
                             Text("pork, lard")
                             Text("🍵")
                             Text("free ocha")
-                                .tracking(0)
                         }.foregroundColor(Color.gray.opacity(0.6 ))
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .font(.system(size: 16))
                             
                         Spacer()
                             .frame(height: 15)
                         Text(ramen.ramenDesc)
                             .foregroundColor(Color.white)
                             .frame(maxWidth: .infinity, alignment: .leading)
-
                             
                         HStack { // Bowl Sizes
                             // Text Bowl Size
