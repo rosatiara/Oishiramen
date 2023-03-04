@@ -50,7 +50,8 @@ struct DetailView: View {
                 ZStack { // Menu Detail
                     Rectangle()
                         .cornerRadius(70)
-                        .offset(y: 180)
+                        .frame(height:700)
+                        .offset(y:100)
                         .foregroundColor(Color("gray").opacity(0.45))
                     VStack {
                         Image(ramen.ramenImage)
@@ -75,25 +76,33 @@ struct DetailView: View {
                         Text(ramen.ramenName)
                             .foregroundColor(Color.white)
                             .font(.system(size: 40, weight: .heavy))
-                            .frame(alignment: .trailing)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Spacer()
+                            .frame(height: 15)
                         HStack {
                             Text("⭐")
                             Text(ramen.ramenRatingNum)
-                            
-                            Text("⭐")
+                            Text("🐖")
                             Text("pork, lard")
-                            
-                            Text("⭐")
+                            Text("🍵")
                             Text("free ocha")
-                            // pork, lard
-                            // free ocha
-                        }
-                        // Description
+                                .tracking(0)
+                        }.foregroundColor(Color.gray.opacity(0.6 ))
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            
+                        Spacer()
+                            .frame(height: 15)
+                        Text(ramen.ramenDesc)
+                            .foregroundColor(Color.white)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+
+                            
                         HStack { // Bowl Sizes
                             // Text Bowl Size
                             // Bowl sizes (S, M, L)
                         }
-                    }
+                    }.padding(40)
+                        .offset(y:-100)
                 }
             }.padding(.vertical)
                 .frame(maxWidth: .infinity , maxHeight: .infinity, alignment: .top)
