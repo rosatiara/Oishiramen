@@ -63,24 +63,28 @@ struct DetailView: View {
                         ZStack {
                             Rectangle()
                                 .frame(width: 120, height: 50)
-                                .cornerRadius(20)
+                                .cornerRadius(30)
                             HStack {
                                 Button {
                                     
                                 } label : {
-                                    
-                                }
-                                
+                                    Image("subtract")
+                                }.padding(.trailing, 8)
+                                Text("1")
+                                   
                                 Button {
                                     
                                 } label : {
-                                    
-                                }
+                                    Image("add")
+
+                                }.padding(.leading, 8)
                                 
                             }.foregroundColor(Color.black)
                                 .font(.system(size: 20, weight: .bold))
                                 .frame(maxWidth: .infinity)
-                        }.padding(.vertical)
+                                
+                        }.padding(.top, 30)
+                            .padding(.bottom, 15)
                         // ramen title
                         Text(ramen.ramenName)
                             .foregroundColor(Color.white)
