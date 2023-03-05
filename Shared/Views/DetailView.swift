@@ -55,7 +55,7 @@ struct DetailView: View {
                         .frame(height:700)
                         .offset(y:100)
                         .foregroundColor(Color("gray-detail").opacity(0.45))
-                        
+                    
                     VStack {
                         Image(ramen.ramenImage)
                             .resizable()
@@ -74,18 +74,18 @@ struct DetailView: View {
                                     Image("subtract")
                                 }.padding(.trailing, 8)
                                 Text("1")
-                                   
+                                
                                 Button {
                                     
                                 } label : {
                                     Image("add")
-
+                                    
                                 }.padding(.leading, 8)
                                 
                             }.foregroundColor(Color.black)
                                 .font(.system(size: 20, weight: .bold))
                                 .frame(maxWidth: .infinity)
-                                
+                            
                         }.padding(.top, 30)
                             .padding(.bottom, 15)
                         // Ramen Name
@@ -118,7 +118,7 @@ struct DetailView: View {
                                 .foregroundColor(Color.gray.opacity(0.8))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .font(.callout)
-                               
+                            
                             ForEach(["S", "M", "L"], id:\.self) { bowlSize in
                                 Button {
                                     self.bowlSize = bowlSize
@@ -130,13 +130,13 @@ struct DetailView: View {
                                         .padding(.horizontal)
                                         .background(
                                             RoundedRectangle(cornerRadius: 7)
-                                                        .fill(Color.gray.opacity(0.3))
+                                                .fill(Color.gray.opacity(0.3))
                                                 .opacity(self.bowlSize == bowlSize ? 0.2 : 0)
                                         )
-
+                                    
                                 }
                             }
-                        
+                            
                         }.padding(.vertical, 5)
                     }.padding(.horizontal, 40)
                 }
@@ -147,9 +147,9 @@ struct DetailView: View {
                             .font(.system(size: 32, weight: .bold))
                             .foregroundColor(.white)
                     }
-                        .foregroundColor(Color.gray.opacity(0.8))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .font(.callout)
+                    .foregroundColor(Color.gray.opacity(0.8))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(.callout)
                     
                     Button {
                         
@@ -160,12 +160,12 @@ struct DetailView: View {
                             .background(
                                 RoundedRectangle(cornerRadius: 50)
                                     .frame(width: 225, height: 55)
-                                    
+                                
                             )
                             .padding(.vertical, 10)
                             .padding(.horizontal)
                             .offset(x: -40)
-                            
+                        
                     }
                 }.frame(maxWidth: .infinity)
                     .padding(.horizontal, 40)
