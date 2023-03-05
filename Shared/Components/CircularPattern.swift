@@ -42,7 +42,7 @@ struct CircularPattern: View {
                 .padding(69)
             
         }
-        .frame(width: 250, height: 900)
+        .frame(width: 250, height: 1000)
         .padding()
     }
 }
