@@ -72,6 +72,8 @@ struct BaseView: View {
                 }.background(Color("gray").opacity(0.45)
                                 .clipShape(CustomCurveButton())
                             )
+                // hide base when the detail view is opened
+                    .offset(y: baseData.showDetail ? 200 : 0)
                 ,alignment: .bottom
             )
 
