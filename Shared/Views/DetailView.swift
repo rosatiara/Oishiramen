@@ -10,6 +10,8 @@ import SwiftUI
 struct DetailView: View {
     @EnvironmentObject var baseData: BaseViewModel
     var animation: Namespace.ID
+    @State var bowlSize = "S"
+    
     var body: some View {
         if let ramen = baseData.currentRamen, baseData.showDetail {
             VStack (spacing: 15) {
@@ -88,7 +90,7 @@ struct DetailView: View {
                                 
                         }.padding(.top, 30)
                             .padding(.bottom, 15)
-                        // ramen title
+                        // Ramen Name
                         Text(ramen.ramenName)
                             .foregroundColor(Color.white)
                             .font(.system(size: 40, weight: .heavy))
@@ -105,7 +107,6 @@ struct DetailView: View {
                         }.foregroundColor(Color.gray.opacity(0.6 ))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .font(.system(size: 16))
-                            
                         Spacer()
                             .frame(height: 15)
                         Text(ramen.ramenDesc)
@@ -113,13 +114,34 @@ struct DetailView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .font(.callout)
                             .lineSpacing(7)
-                            
-                        HStack { // Bowl Sizes
-                            // Text Bowl Size
-                            // Bowl sizes (S, M, L)
-                        }
-                    }.padding(40)
-                        .offset(y:-100)
+                            .padding(.top, 10)
+                        HStack {
+                            Text("Bowl Size")
+                                .foregroundColor(Color.gray.opacity(0.8))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .font(.callout)
+                               
+                            ForEach(["S", "M", "L"], id:\.self) { bowlSize in
+                                Button {
+                                    self.bowlSize = bowlSize
+                                } label: {
+                                    Text(bowlSize)
+                                        .font(.system(size: 20, weight: .semibold))
+                                        .foregroundColor(self.bowlSize == bowlSize ? Color("orange") : Color.gray.opacity(0.2))
+                                        .padding(.vertical, 15)
+                                        .padding(.horizontal)
+                                        .background(
+                                            RoundedRectangle(cornerRadius: 7)
+                                                        .fill(Color.gray.opacity(0.3))
+                                                .opacity(self.bowlSize == bowlSize ? 0.2 : 0)
+                                        )
+
+                                }
+                            }
+
+                        }.padding(.vertical, 5)
+                    }.padding(.horizontal, 30)
+                        .offset(y:-50)
                 }
             }.padding(.vertical)
                 .frame(maxWidth: .infinity , maxHeight: .infinity, alignment: .top)
