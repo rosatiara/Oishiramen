@@ -139,6 +139,7 @@ struct DetailView: View {
                             
                         }.padding(.vertical, 5)
                     }.padding(.horizontal, 40)
+                        .offset(y:-20)
                 }
                 HStack {
                     VStack {
