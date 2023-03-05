@@ -53,7 +53,7 @@ struct DetailView: View {
                     Rectangle()
                         .cornerRadius(70)
                         .frame(height:700)
-                        .offset(y:100)
+                        .offset(y:150)
                         .foregroundColor(Color("gray-detail").opacity(0.45))
                     
                     VStack {
