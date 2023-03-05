@@ -13,11 +13,16 @@ struct OpeningView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             VStack {
                 CircularPattern()
+                    .offset(x: 200, y: -80)
                 VStack {
                     Text("OISHIRAMEN")
                     Text("Japanese")
                 }.foregroundColor(.white)
-                Image("")
+                Image("opening")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxWidth:.infinity)
+                    .offset(y: 30)
             }
         }
     }
