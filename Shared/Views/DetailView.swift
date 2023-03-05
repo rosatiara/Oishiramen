@@ -111,6 +111,8 @@ struct DetailView: View {
                         Text(ramen.ramenDesc)
                             .foregroundColor(Color.white)
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .font(.callout)
+                            .lineSpacing(7)
                             
                         HStack { // Bowl Sizes
                             // Text Bowl Size
