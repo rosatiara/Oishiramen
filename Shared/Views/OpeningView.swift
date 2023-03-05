@@ -9,7 +9,17 @@ import SwiftUI
 
 struct OpeningView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all)
+            VStack {
+                CircularPattern()
+                VStack {
+                    Text("OISHIRAMEN")
+                    Text("Japanese")
+                }.foregroundColor(.white)
+                Image("")
+            }
+        }
     }
 }
 
