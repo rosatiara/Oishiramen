@@ -63,9 +63,7 @@ struct DetailView: View {
                             .frame(width: 310, height: 310)
                             .matchedGeometryEffect(id: ramen.ramenImage, in: animation)
                             .frame(height: getScreenBounds().height / 3)
-                        // ramen image
-                        // plus button
-                        ZStack {
+                        ZStack { // Plus button
                             Rectangle()
                                 .frame(width: 120, height: 50)
                                 .cornerRadius(30)
@@ -111,7 +109,7 @@ struct DetailView: View {
                             .frame(height: 15)
                         Text(ramen.ramenDesc)
                             .foregroundColor(Color.white)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .frame(alignment: .leading)
                             .font(.callout)
                             .lineSpacing(7)
                             .padding(.top, 10)
@@ -138,15 +136,43 @@ struct DetailView: View {
 
                                 }
                             }
-
+                        
                         }.padding(.vertical, 5)
-                    }.padding(.horizontal, 30)
-                        .offset(y:-50)
+                    }.padding(.horizontal, 40)
                 }
+                HStack {
+                    VStack {
+                        Text("Total")
+                        Text("$9")
+                            .font(.system(size: 32, weight: .bold))
+                            .foregroundColor(.white)
+                    }
+                        .foregroundColor(Color.gray.opacity(0.8))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.callout)
+                    
+                    Button {
+                        
+                    }label: {
+                        Text("Add to Cart")
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundColor(.black)
+                            .background(
+                                RoundedRectangle(cornerRadius: 50)
+                                    .frame(width: 225, height: 55)
+                                    
+                            )
+                            .padding(.vertical, 10)
+                            .padding(.horizontal)
+                            .offset(x: -40)
+                            
+                    }
+                }.frame(maxWidth: .infinity)
+                    .padding(.horizontal, 40)
             }.padding(.vertical)
                 .frame(maxWidth: .infinity , maxHeight: .infinity, alignment: .top)
                 .background(Color.black)
-                .transition(.opacity)
+                .transition(.move(edge: .bottom))
         }
     }
 }
