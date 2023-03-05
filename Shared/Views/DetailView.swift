@@ -53,11 +53,14 @@ struct DetailView: View {
                         .frame(height:700)
                         .offset(y:100)
                         .foregroundColor(Color("gray-detail").opacity(0.45))
+                        
                     VStack {
                         Image(ramen.ramenImage)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 320, height: 320)
+                            .frame(width: 310, height: 310)
+                            .matchedGeometryEffect(id: ramen.ramenImage, in: animation)
+                            .frame(height: getScreenBounds().height / 3)
                         // ramen image
                         // plus button
                         ZStack {
@@ -128,5 +131,11 @@ struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
         // DetailView()
+    }
+}
+
+extension View {
+    func getScreenBounds()->CGRect {
+        return UIScreen.main.bounds
     }
 }
