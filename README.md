@@ -1,4 +1,4 @@
 # Oishiramen
 
-Ramen order app :-)
+Ramen ordering app :-)
 
