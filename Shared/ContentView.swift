@@ -16,7 +16,7 @@ struct ContentView: View {
                     label: {
                         EmptyView()
                     })
-                
+                // test
                 OpeningView()
             }
         }
