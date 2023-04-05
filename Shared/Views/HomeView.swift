@@ -23,6 +23,9 @@ struct HomeView: View {
                             .frame(width: 30, height: 30)
                     }
                     Spacer()
+                    Text("Oishiramen")
+                        .bold()
+                    Spacer()
                     Button {
                         
                     } label : {
@@ -56,13 +59,17 @@ struct HomeView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding(15)
-                .offset(y: -70)
+                .offset(y: -40)
                 .frame(width: 150, height: 150)
                // .border(.red)
-            
-            Text(ramen.ramenName)
-            Text(ramen.ramenRatingNum)
+            VStack {
+                Text(ramen.ramenName)
+                Text(ramen.ramenRating)
+                Text(ramen.ramenRatingNum)
+                Text(ramen.price)
+            }.offset(y: -55)
         }.padding(5)
+            .frame(width: 160, height: 180)
             .background(Color.white, in: RoundedRectangle(cornerRadius: 25))
             .padding(.top, 60)
     }
