@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+       // NavigationView {
             VStack {
                 NavigationLink(
                     destination: BaseView(),
@@ -18,7 +18,7 @@ struct ContentView: View {
                     })
                 OpeningView()
             }
-        }
+       // }
     }
 }
 
