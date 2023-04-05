@@ -57,7 +57,7 @@ struct BaseView: View {
                             .frame(width: 26, height: 26)
                             .foregroundColor(Color("orange"))
                             .padding(17)
-                            .background(Color("gray").opacity(0.45))
+                            .background(Color("gray").opacity(0.5))
                             .clipShape(Circle())
                         
                             .shadow(color: Color.orange.opacity(0.04), radius: 5, x: 0, y: 3)

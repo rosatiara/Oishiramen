@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Namespace var animation
+    @EnvironmentObject var baseData: BaseViewModel
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -36,9 +39,9 @@ struct HomeView: View {
                             .frame(width: 30, height: 30)
                     }
                 }.foregroundColor(.myOrange)
-//                Text("heyyyyy")
-//                    .font(.system(size: 40))
-//                    .foregroundColor(.white)
+                //                Text("heyyyyy")
+                //                    .font(.system(size: 40))
+                //                    .foregroundColor(.white)
                 // Product view
                 ScrollView(.vertical, showsIndicators: false) {
                     let columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 2)
@@ -46,11 +49,18 @@ struct HomeView: View {
                     LazyVGrid(columns: columns,spacing: 18) {
                         ForEach(ramens) { ramen in
                             CardView(ramen: ramen)
+                                .onTapGesture {
+                                    withAnimation {
+                                        baseData.currentRamen = ramen
+                                        baseData.showDetail = true
+                                    }
+                                }
                         }
                     }
                 }
             }.padding()
         }
+        .overlay(DetailView(animation:animation).environmentObject(baseData))
     }
     //            ScrollView (.vertical, showsIndicators: false) {
     @ViewBuilder func CardView(ramen: Ramen) -> some View {
@@ -61,7 +71,7 @@ struct HomeView: View {
                 .padding(15)
                 .offset(y: -40)
                 .frame(width: 150, height: 150)
-               // .border(.red)
+            // .border(.red)
             VStack {
                 Text(ramen.ramenName)
                 Text(ramen.ramenRating)

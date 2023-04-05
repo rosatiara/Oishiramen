@@ -14,7 +14,7 @@ struct DetailView: View {
     
     var body: some View {
         if let ramen = baseData.currentRamen, baseData.showDetail {
-            VStack (spacing: 15) {
+            VStack {
                 HStack {
                     // chevron left
                     Button {
@@ -48,19 +48,21 @@ struct DetailView: View {
                     }
                     
                     // option
-                }.padding(.horizontal)
+                }.padding(.top, 20)
+                    .padding(.horizontal, 30)
+                    .offset(y: 40)
                 ZStack { // Menu Detail
                     Rectangle()
                         .cornerRadius(70)
                         .frame(height:700)
                         .offset(y:150)
-                        .foregroundColor(Color("gray-detail").opacity(0.45))
+                        .foregroundColor(Color("gray-detail"))
                     
                     VStack {
                         Image(ramen.ramenImage)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 310, height: 310)
+                            .frame(width: 250, height: 250)
                             .matchedGeometryEffect(id: ramen.ramenImage, in: animation)
                             .frame(height: getScreenBounds().height / 3)
                         ZStack { // Plus button
@@ -86,7 +88,7 @@ struct DetailView: View {
                                 .font(.system(size: 20, weight: .bold))
                                 .frame(maxWidth: .infinity)
                             
-                        }.padding(.top, 30)
+                        }.padding(.top, 10)
                             .padding(.bottom, 15)
                         // Ramen Name
                         Text(ramen.ramenName)
@@ -130,7 +132,7 @@ struct DetailView: View {
                                         .padding(.horizontal)
                                         .background(
                                             RoundedRectangle(cornerRadius: 7)
-                                                .fill(Color.gray.opacity(0.3))
+                                                .fill(Color.gray.opacity(0.5))
                                                 .opacity(self.bowlSize == bowlSize ? 0.2 : 0)
                                         )
                                     
@@ -139,7 +141,6 @@ struct DetailView: View {
                             
                         }.padding(.vertical, 5)
                     }.padding(.horizontal, 40)
-                        .offset(y:-20)
                 }
                 HStack {
                     VStack {
@@ -160,7 +161,7 @@ struct DetailView: View {
                             .foregroundColor(.black)
                             .background(
                                 RoundedRectangle(cornerRadius: 50)
-                                    .frame(width: 225, height: 55)
+                                    .frame(width: 225, height: 50)
                                 
                             )
                             .padding(.vertical, 10)
@@ -180,8 +181,8 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-        // DetailView()
+       ContentView()
+        // DetailView
     }
 }
 
