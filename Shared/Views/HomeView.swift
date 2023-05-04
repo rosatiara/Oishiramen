@@ -39,10 +39,6 @@ struct HomeView: View {
                             .frame(width: 30, height: 30)
                     }
                 }.foregroundColor(.myOrange)
-                //                Text("heyyyyy")
-                //                    .font(.system(size: 40))
-                //                    .foregroundColor(.white)
-                // Product view
                 ScrollView(.vertical, showsIndicators: false) {
                     let columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 2)
                     

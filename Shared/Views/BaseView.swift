@@ -25,6 +25,7 @@ struct BaseView: View {
                     .foregroundColor(Color("orange"))
                     .background(Color.black)
                 Text("Favorite")
+                    FavoriteView()
                     .tag(Tab.Favorite)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .foregroundColor(Color("orange"))
@@ -99,8 +100,6 @@ struct BaseView: View {
             
         }
     }
-    
-    
 }
 
 struct BaseView_Previews: PreviewProvider {
